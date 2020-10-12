@@ -1,21 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+import Following from './src/screens/Following'
+import Discover from './src/screens/Discover'
+import Browse from './src/screens/Browse'
+import Esports from './src/screens/Esports'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+
+const TabNavigator = createBottomTabNavigator({
+  Following: Following,
+  Discover: Discover,
+  Browse : Browse,
+  Esports : Esports
 });
+
+export default createAppContainer(TabNavigator);
