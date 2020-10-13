@@ -16,9 +16,8 @@ export default class Following extends React.Component {
           <View style={styles.title}>
             <Text style={styles.bigBlue}>Following</Text>
           </View>
-          <FollowedCategories />
+          <FollowedCategories title= "FOLLOWED CATEGORIES" />
           <LiveChannels title="FOLLOWED CHANNELS" items={items} />
-          <LiveChannels title="RECOMMENDED CHANNELS" items={items} />
         </ScrollView>
       </SafeAreaView>
     );

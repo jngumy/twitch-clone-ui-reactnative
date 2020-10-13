@@ -34,5 +34,6 @@ const styles = StyleSheet.create({
         height: windowHeight/2.3,
         display: 'flex',
         flexDirection: 'column',
+        paddingBottom: 15
     },
 });

@@ -53,7 +53,7 @@ const FollowedCategories = (props) => {
         <View style = {styles.container}>
             <View style = {styles.titleWrapper}>
                 <Text style ={styles.title}>
-                FOLLOWED CATEGORIES
+                {props.title}
                 </Text>
             </View>
           
