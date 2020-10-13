@@ -15,6 +15,22 @@ const items = [
         tags : ['Spanish']
     },
     {
+        title: 'Viendo the Boys y despues..',
+        user: 'Rubius',
+        views: '68.4K',
+        uri: require('../assets/images/rubius.jpg'),
+        category: 'Just Chatting',
+        tags : ['Spanish']
+    },
+    {
+        title: 'IRL Probando FIFA 21',
+        user: 'SLAKUN10',
+        views: '27.4K',
+        uri: require('../assets/images/kun.jpg'),
+        category: 'Just Chatting',
+        tags : ['Spanish']
+    },
+    {
         title: 'IRL Probando FIFA 21',
         user: 'SLAKUN10',
         views: '27.4K',
@@ -56,9 +72,6 @@ const LiveChannels = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-      marginBottom:30,
-      backgroundColor: 'orange',
-      height: windowHeight
     },
     titleWrapper : {
       height: 30
