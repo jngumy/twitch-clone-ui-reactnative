@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions , SafeAreaView, ScrollView, Text, View } from 'r
 import Header from '../components/Header'
 import FollowedCategories from '../components/FollowedCategories'
 import LiveChannels from '../components/LiveChannels'
-
+import items from '../components/ItemsLiveChannels'
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -18,7 +18,8 @@ export default class Following extends React.Component {
              <Text style = {styles.bigBlue}>Following</Text>
              </View>
              <FollowedCategories />
-             <LiveChannels />
+             <LiveChannels title="FOLLOWED CHANNELS" items= {items}/>
+             <LiveChannels title="RECOMMENDED CHANNELS" items= {items}/>
            </ScrollView>
         </SafeAreaView>
       );

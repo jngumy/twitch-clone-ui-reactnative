@@ -34,8 +34,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         width: '100%',
         flexDirection: 'row',
-        marginBottom: 20,
-        
+        marginBottom: 20
     },
     cardDescription: {
         paddingLeft: 15,

@@ -66,10 +66,10 @@ const FollowedCategories = (props) => {
 const styles = StyleSheet.create({
     container: {
       height: windowHeight/3.5,
-      marginBottom:30
     },
     titleWrapper : {
-      height: 30
+      height: 30,
+
     },
     title: {
         color: 'grey',
