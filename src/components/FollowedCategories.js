@@ -58,6 +58,7 @@ const FollowedCategories = (props) => {
             </View>
           
             <CategoriesCarrousel items={items} itemsPerInterval = {items.size}/>
+
         </View>
     );
 }
@@ -65,6 +66,7 @@ const FollowedCategories = (props) => {
 const styles = StyleSheet.create({
     container: {
       height: windowHeight/3.5,
+      marginBottom:30
     },
     titleWrapper : {
       height: 30

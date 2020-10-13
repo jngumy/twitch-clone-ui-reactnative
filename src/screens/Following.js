@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Dimensions ,Text, View } from 'react-native';
+import { StyleSheet, Dimensions , SafeAreaView, ScrollView, Text, View } from 'react-native';
 import Header from '../components/Header'
 import FollowedCategories from '../components/FollowedCategories'
+import LiveChannels from '../components/LiveChannels'
+
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -9,13 +11,16 @@ const windowHeight = Dimensions.get('window').height;
 export default class Following extends React.Component {
     render() {
       return (
-        <View style= {styles.container}>
-          <Header />
-          <View style = {styles.title}>
-            <Text style = {styles.bigBlue}>Following</Text>
-          </View>
-          <FollowedCategories />
-        </View>
+        <SafeAreaView style= {styles.container}>
+           <ScrollView style={styles.scrollView}>
+             <Header />
+             <View style = {styles.title}>
+             <Text style = {styles.bigBlue}>Following</Text>
+             </View>
+             <FollowedCategories />
+             <LiveChannels />
+           </ScrollView>
+        </SafeAreaView>
       );
     }
   }
@@ -29,6 +34,9 @@ export default class Following extends React.Component {
       backgroundColor: 'black',
       flex: 1,
     },
+    scrollView: {
+    },
+  
     bigBlue: {
       color: 'white',
       fontWeight: 'bold',

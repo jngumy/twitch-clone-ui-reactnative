@@ -5,38 +5,33 @@ import { Entypo } from '@expo/vector-icons';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const CategoriesCarrousel = (props) => {
+const LiveChannelsList = (props) => {
     const { items } = props
     return(
         <View style = {styles.container}>
-            <ScrollView
-                horizontal={true}
-                contentContainerStyle={{ width: `${50 * props.itemsPerInterval}%` }}
-                showsHorizontalScrollIndicator={false}
-                scrollEventThrottle={200}
-                pagingEnabled
-                decelerationRate="fast">
-               
                 {
                     items.map(function(item, index){
                         return(
                             <View key = {index }style={styles.card}>
                                 <Image source={item.uri} style = {styles.categoryImg}/>
-                                <Text style = {styles.titleCategory}>{item.title}</Text>
+                                <View>
+                                  <Text style = {styles.user}>{item.user}</Text>
+                                  <Text style = {styles.title}>{item.title}</Text>
+                                  <Text style = {styles.category}>{item.category}</Text>
+                                  {
+                                      item.tags.map((tag, index)=> <View key= {index}>
+                                                            <Text>{tag}</Text>
+                                                         </View>)
+                                  }
+                                </View>
                                 <View style = {styles.viewsWrapper}>
                                   <Entypo name="controller-record" size={18} color="red" />
                                   <Text style = {styles.views}>{item.views}</Text>
                                 </View>
-                               
                             </View>
                         )
                     })
                 }
-                      
-            
-              
-           
-            </ScrollView>
         </View>
     )
 }
@@ -45,18 +40,19 @@ const CategoriesCarrousel = (props) => {
 const styles = StyleSheet.create({
     container: {
         width: '100%',
+        display: 'flex',
         flexDirection: 'row',
-        flex: 1
+    
     },
     card : {
         display: 'flex',
-        flexDirection: 'column',
-        width:100,
-        marginRight:8
+        flexDirection: 'row',
+        width: '100%',
+        backgroundColor: 'green'
     },
     categoryImg :{
-      width: 100,
-      height: '75%',
+        height:80,
+        width: 120
     },
     titleCategory : {
         color: 'white',
@@ -65,8 +61,9 @@ const styles = StyleSheet.create({
     viewsWrapper : {
         display:'flex',
         flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent:'flex-start',
+        alignItems: 'flex-end',
+        justifyContent: 'flex-end',
+        backgroundColor: 'blue'
     },
     views : {
         color: 'lightgrey',
@@ -75,4 +72,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default CategoriesCarrousel;
+export default LiveChannelsList;
