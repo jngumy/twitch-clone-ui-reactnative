@@ -24,8 +24,8 @@ export default class Following extends React.Component {
   const styles = StyleSheet.create({
     container: {
       paddingTop: 20,
-      paddingLeft: 10,
-      paddingRight: 10,
+      paddingLeft: 12,
+      paddingRight: 12,
       backgroundColor: 'black',
       flex: 1,
     },
@@ -38,8 +38,8 @@ export default class Following extends React.Component {
       color: 'red',
     },
     title :{
-      height: windowHeight/10,
-      backgroundColor: 'orange'
+      height: windowHeight/9,
+
     }
   });
   
