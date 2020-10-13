@@ -39,8 +39,8 @@ export default class Following extends React.Component {
   
     bigBlue: {
       color: 'white',
-      fontWeight: 'bold',
       fontSize: 40,
+      fontFamily: 'Roobert-bold'
     },
     red: {
       color: 'red',

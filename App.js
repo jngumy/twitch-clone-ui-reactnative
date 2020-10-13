@@ -8,7 +8,8 @@ import Browse from './src/screens/Browse'
 import Esports from './src/screens/Esports'
 
 import { AntDesign } from '@expo/vector-icons'; 
-
+import { useFonts } from 'expo-font';
+import { AppLoading } from 'expo';
 
 
 const TabNavigator = createBottomTabNavigator({
@@ -72,4 +73,20 @@ const TabNavigator = createBottomTabNavigator({
   
 });
 
-export default createAppContainer(TabNavigator);
+//export default createAppContainer(TabNavigator);
+const RootApp = createAppContainer(TabNavigator);
+
+export default function App(props) {
+  let [fontsLoaded] = useFonts({
+    'Roobert-bold': require('./assets/fonts/RoobertTRIAL-Bold.otf'),
+    'Roobert':require('./assets/fonts/RoobertTRIAL-Regular.otf'),
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
+  return (
+    <RootApp />
+  );
+}

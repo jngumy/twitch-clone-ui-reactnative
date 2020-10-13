@@ -19,7 +19,7 @@ const LiveChannelsList = (props) => {
                                 <Image source={item.uri} style = {styles.categoryImg}/>
                                 <View style = {styles.cardDescription}>
                                   <Text style = {styles.user}>{item.user}</Text>
-                                  <Text style = {styles.title}>{item.title}</Text>
+                                  <Text numberOfLines ={1}  style = {styles.title}>{item.title}</Text>
                                   <Text style = {styles.category}>{item.category}</Text>
                                   {
                                       item.tags.map((tag, index)=> <View style = {styles.tag} key= {index}>
@@ -77,6 +77,8 @@ const styles = StyleSheet.create({
     views : {
         color: 'white',
         alignSelf: 'center',
+        fontFamily: 'Roobert'
+
 
     },
     tag :{
@@ -86,12 +88,14 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         width: 60,
         alignItems: 'center',
-        fontSize: 13
+        fontSize: 13,
+        fontFamily: 'Roobert'
+
     },
     user: {
         color: 'white',
-        fontWeight: 'bold',
-        fontSize: 15
+        fontFamily: 'Roobert-bold',
+        fontSize: 17
     },
     title: {
         color: 'white',
@@ -99,7 +103,8 @@ const styles = StyleSheet.create({
     },
     category : {
         color: 'grey',
-        fontSize: 14
+        fontSize: 14,
+        fontFamily: 'Roobert'
     }
 });
 

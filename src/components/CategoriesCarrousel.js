@@ -22,7 +22,7 @@ const CategoriesCarrousel = (props) => {
                         return(
                             <View key = {index }style={styles.card}>
                                 <Image source={item.uri} style = {styles.categoryImg}/>
-                                <Text style = {styles.titleCategory}>{item.title}</Text>
+                                <Text numberOfLines ={1} style = {styles.titleCategory}>{item.title}</Text>
                                 <View style = {styles.viewsWrapper}>
                                   <Entypo name="controller-record" size={18} color="red" />
                                   <Text style = {styles.views}>{item.views}</Text>
@@ -60,7 +60,9 @@ const styles = StyleSheet.create({
     },
     titleCategory : {
         color: 'white',
-        fontWeight: 'bold'
+        fontFamily: 'Roobert-bold',
+        lineHeight: 20
+        
     },
     viewsWrapper : {
         display:'flex',
@@ -71,6 +73,7 @@ const styles = StyleSheet.create({
     views : {
         color: 'lightgrey',
         alignSelf: 'center',
+        fontFamily: 'Roobert',
 
     }
 });

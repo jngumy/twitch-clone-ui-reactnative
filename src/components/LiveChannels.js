@@ -15,7 +15,7 @@ const items = [
         tags : ['Spanish']
     },
     {
-        title: 'Viendo the Boys y despues..',
+        title: 'Viendo the Boys y despuesasdasdasdasdasdasdasdssssss.',
         user: 'Rubius',
         views: '68.4K',
         uri: require('../assets/images/rubius.jpg'),
@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
     },
     title: {
         color: 'grey',
-        fontWeight: 'bold',
+        fontFamily: 'Roobert-bold',
+        fontSize: 13
         
     },
    

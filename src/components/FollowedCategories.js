@@ -73,7 +73,10 @@ const styles = StyleSheet.create({
     },
     title: {
         color: 'grey',
-        fontWeight: 'bold',
+        fontFamily: 'Roobert-bold',
+        fontSize: 13
+
+
         
     },
    
