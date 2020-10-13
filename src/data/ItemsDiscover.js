@@ -1,10 +1,10 @@
 const items = [
     {
-        title: 'IRL Probando FIFA 21',
-        user: 'SLAKUN10',
-        views: '27.4K',
-        uri: require('../assets/images/kun.jpg'),
-        profileImg : require('../assets/images/kun-profile.png'),
+        title: '21.30 9z vs CA',
+        user: 'Frankkaster',
+        views: '7.4K',
+        uri: require('../assets/images/fran-live.jpg'),
+        profileImg : require('../assets/images/fran-profile.jpeg'),
         category: 'Just Chatting',
         tags : ['Spanish']
     },

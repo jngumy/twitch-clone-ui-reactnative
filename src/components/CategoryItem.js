@@ -26,11 +26,14 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         width:100,
-        marginRight:8
+        marginRight:8,
+
     },
     categoryImg :{
       width: 100,
       height: '75%',
+      backgroundColor: '#6441a5'
+
     },
     titleCategory : {
         color: 'white',

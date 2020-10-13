@@ -10,7 +10,7 @@ const CategoriesCarrousel = (props) => {
         <View style = {styles.container}>
             <ScrollView
                 horizontal={true}
-                contentContainerStyle={{ width: `${50 * props.itemsPerInterval}%` }}
+                contentContainerStyle={{ width: `${100 * props.itemsPerInterval}%` }}
                 showsHorizontalScrollIndicator={false}
                 scrollEventThrottle={200}
                 pagingEnabled
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         flexDirection: 'row',
-        flex: 1
+        flex: 1,
     },
 });
 

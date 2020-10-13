@@ -1,9 +1,6 @@
 import React from 'react';
-import { StyleSheet, Image, ScrollView, Dimensions ,Text, View } from 'react-native';
+import { StyleSheet,Text, View } from 'react-native';
 import LiveChannelsList from './LiveChannelsList'
-
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
 
 
 
