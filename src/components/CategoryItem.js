@@ -5,7 +5,7 @@ import { Entypo } from '@expo/vector-icons';
 
 const CategoryItem = (props) => {
     return(
-        <TouchableOpacity key = {props.index }style={styles.card} activeOpacity={0.6}>
+        <TouchableOpacity style={styles.card} activeOpacity={0.6}>
            <Image source={props.item.uri} style = {styles.categoryImg}/>
            <Text numberOfLines ={1} style = {styles.titleCategory}>{props.item.title}</Text>
            <View style = {styles.viewsWrapper}>
