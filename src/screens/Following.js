@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import FollowedCategories from '../components/FollowedCategories'
 import LiveChannels from '../components/LiveChannels'
 import items from '../data/ItemsLiveChannels'
+import items_cat from '../data/FollowedCategories'
 
 const windowHeight = Dimensions.get('window').height;
 
@@ -16,7 +17,7 @@ export default class Following extends React.Component {
           <View style={styles.title}>
             <Text style={styles.bigBlue}>Following</Text>
           </View>
-          <FollowedCategories title= "FOLLOWED CATEGORIES" />
+          <FollowedCategories items = {items_cat} title= "FOLLOWED CATEGORIES" />
           <LiveChannels title="FOLLOWED CHANNELS" items={items} />
         </ScrollView>
       </SafeAreaView>
@@ -27,7 +28,6 @@ export default class Following extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
     paddingLeft: 12,
     paddingRight: 12,
     backgroundColor: 'black',
