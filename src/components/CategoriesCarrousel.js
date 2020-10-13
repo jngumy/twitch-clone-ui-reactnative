@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Image, ScrollView, Dimensions ,Text, View } from 'react-native';
+import { StyleSheet, Image, ScrollView,TouchableOpacity, Dimensions ,Text, View } from 'react-native';
 import { Entypo } from '@expo/vector-icons'; 
 
 const windowWidth = Dimensions.get('window').width;
@@ -15,12 +15,12 @@ const CategoriesCarrousel = (props) => {
                 showsHorizontalScrollIndicator={false}
                 scrollEventThrottle={200}
                 pagingEnabled
-                decelerationRate="fast">
+                decelerationRate='normal'>
                
                 {
                     items.map(function(item, index){
                         return(
-                            <View key = {index }style={styles.card}>
+                            <TouchableOpacity key = {index }style={styles.card} activeOpacity={0.6}>
                                 <Image source={item.uri} style = {styles.categoryImg}/>
                                 <Text numberOfLines ={1} style = {styles.titleCategory}>{item.title}</Text>
                                 <View style = {styles.viewsWrapper}>
@@ -28,7 +28,7 @@ const CategoriesCarrousel = (props) => {
                                   <Text style = {styles.views}>{item.views}</Text>
                                 </View>
                                
-                            </View>
+                            </TouchableOpacity>
                         )
                     })
                 }

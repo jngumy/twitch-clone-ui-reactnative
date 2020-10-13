@@ -61,12 +61,12 @@ const TabNavigator = createBottomTabNavigator({
     inactiveTintColor: 'white',
     activeBackgroundColor: 'black',
     inactiveBackgroundColor: 'black',
+    fontFamily: 'Roobert',
     style: {
       borderTopColor: 'black',
       paddingRight: 25,
       paddingLeft: 25,
       backgroundColor: 'black',
-      
     },
   
   },

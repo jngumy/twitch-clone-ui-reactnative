@@ -11,7 +11,7 @@ const Header = () => {
     return(
         <View style = {styles.header}>
             <View style = {styles.profileLogo}>
-                 <Image style={styles.tinyLogo}  source={require('../assets/images/profile.png')}/>
+                 <Image style={styles.tinyLogo}  source={require('../assets/images/kun-profile.png')}/>
             </View>
           <View style = {styles.buttonsWrapper}>
             <Notifications />   
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
     },
 
     tinyLogo: {
-        width: 35,
-        height: 35,
+        width: 32,
+        height: 32,
         borderRadius: 20,
     },
     buttonsWrapper : {

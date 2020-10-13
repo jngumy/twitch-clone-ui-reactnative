@@ -40,7 +40,8 @@ export default class Following extends React.Component {
     bigBlue: {
       color: 'white',
       fontSize: 40,
-      fontFamily: 'Roobert-bold'
+      fontFamily: 'Roobert-bold',
+      paddingTop: 10
     },
     red: {
       color: 'red',
