@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   container: {
     paddingLeft: 12,
     paddingRight: 12,
-    backgroundColor: 'black',
+    backgroundColor:'#121212',
     flex: 1,
   },
   bigBlue: {

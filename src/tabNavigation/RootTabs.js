@@ -13,14 +13,18 @@ const RootTabs = createAppContainer(createMaterialTopTabNavigator(RouteConfigs, 
     upperCaseLabel: false,
     activeTintColor: '#6441a5',
     inactiveTintColor: 'white',
-    activeBackgroundColor: 'black',
-    inactiveBackgroundColor: 'black',
+    activeBackgroundColor: '#121212',
+    inactiveBackgroundColor: '#121212',
     style: {
-      borderTopColor: 'black',
-      backgroundColor: 'black',
+      borderTopColor: '#121212',
+      backgroundColor: '#121212',
+      elevation: 0,
+      shadowOpacity: 0,
+      borderBottomWidth: 0,
     },
     indicatorStyle: {
-      backgroundColor: '#6441a5'
+      backgroundColor: '#6441a5',
+
     },
     labelStyle: {
       fontFamily: 'Roobert-bold',

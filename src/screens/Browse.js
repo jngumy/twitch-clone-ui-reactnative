@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableOpacity, ScrollView, Text, View } from 'react-native'
 import { Octicons } from '@expo/vector-icons'
 import RootTabs from '../tabNavigation/RootTabs'
+import { StatusBar } from 'expo-status-bar';
+
 
 import Header from '../components/Header'
 import ModalHeader from '../components/ModalHeader'
@@ -15,7 +17,7 @@ const Browse = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
-      <ScrollView style={styles.scrollView}>
+      <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
         <View style={styles.title}>
           <Text style={styles.bigBlue}>Browse</Text>
         </View>
@@ -41,6 +43,7 @@ const Browse = (props) => {
         </View>
       </Modal>
 
+
     </SafeAreaView>
   );
 
@@ -52,7 +55,7 @@ const styles = StyleSheet.create({
   container: {
     paddingLeft: 12,
     paddingRight: 12,
-    backgroundColor: 'black',
+    backgroundColor: '#121212',
     flex: 1,
   },
   bigBlue: {
@@ -86,7 +89,7 @@ const styles = StyleSheet.create({
     fontSize: 15
   },
   modalView: {
-    backgroundColor: "black",
+    backgroundColor: '#121212',
     height: windowHeight,
     alignItems: "center",
     shadowColor: "#000",

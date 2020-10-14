@@ -55,14 +55,14 @@ const TabNavigator = createBottomTabNavigator({
     tabBarOptions: {
         activeTintColor: '#9146ff',
         inactiveTintColor: 'white',
-        activeBackgroundColor: 'black',
-        inactiveBackgroundColor: 'black',
+        activeBackgroundColor: '#121212',
+        inactiveBackgroundColor: '#121212',
         fontFamily: 'Roobert',
         style: {
-            borderTopColor: 'black',
+            borderTopColor: '#121212',
             paddingRight: 25,
             paddingLeft: 25,
-            backgroundColor: 'black',
+            backgroundColor: '#121212',
         },
 
     },
