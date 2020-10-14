@@ -7,7 +7,7 @@ const items_cat = [
     {
         title: 'GTA V',
         views: '135.8K',
-        uri : require('../assets/images/gta.jpg'),
+        uri: require('../assets/images/gta.jpg'),
     },
     {
         title: 'Counter Strike..',
@@ -27,7 +27,7 @@ const items_cat = [
     {
         title: 'GTA V',
         views: '135.8K',
-        uri : require('../assets/images/gta.jpg'),
+        uri: require('../assets/images/gta.jpg'),
     },
     {
         title: 'Counter Strike..',

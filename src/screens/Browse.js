@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableOpacity, ScrollView, Text, View } from 'react-native';
-import { Octicons } from '@expo/vector-icons';
+import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableOpacity, ScrollView, Text, View } from 'react-native'
+import { Octicons } from '@expo/vector-icons'
 import RootTabs from '../tabNavigation/RootTabs'
 
 import Header from '../components/Header'
 import ModalHeader from '../components/ModalHeader'
 import ModalBody from '../components/ModalBody'
 
-const windowHeight = Dimensions.get('window').height;
+const windowHeight = Dimensions.get('window').height
 
 const Browse = (props) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -46,7 +46,7 @@ const Browse = (props) => {
 
 }
 
-export default Browse;
+export default Browse
 
 const styles = StyleSheet.create({
   container: {

@@ -1,8 +1,8 @@
-import React from 'react';
-import { StyleSheet, Dimensions, Image, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Dimensions, ScrollView, View } from 'react-native'
 import DiscoverItem from './DiscoverItem'
 
-const windowHeight = Dimensions.get('window').height;
+const windowHeight = Dimensions.get('window').height
 
 const DiscoverCarousel = (props) => {
     return(
@@ -26,7 +26,7 @@ const DiscoverCarousel = (props) => {
 
 }
 
-export default DiscoverCarousel;
+export default DiscoverCarousel
 
 const styles = StyleSheet.create({
     container: {

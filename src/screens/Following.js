@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Dimensions, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import { StyleSheet, Dimensions, SafeAreaView, ScrollView, Text, View } from 'react-native'
+
 import Header from '../components/Header'
 import FollowedCategories from '../components/FollowedCategories'
 import LiveChannels from '../components/LiveChannels'
@@ -17,14 +18,13 @@ export default class Following extends React.Component {
           <View style={styles.title}>
             <Text style={styles.bigBlue}>Following</Text>
           </View>
-          <FollowedCategories items = {items_cat} title= "FOLLOWED CATEGORIES" />
+          <FollowedCategories items={items_cat} title="FOLLOWED CATEGORIES" />
           <LiveChannels title="FOLLOWED CHANNELS" items={items} />
         </ScrollView>
       </SafeAreaView>
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -33,9 +33,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     flex: 1,
   },
-  scrollView: {
-  },
-
   bigBlue: {
     color: 'white',
     fontSize: 40,

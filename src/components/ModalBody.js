@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, TouchableHighlight,  TouchableOpacity, Text, View } from 'react-native';
-import { FontAwesome5, FontAwesome, Entypo } from '@expo/vector-icons';
+import { StyleSheet, TouchableHighlight, TouchableOpacity, Text, View } from 'react-native'
+import { FontAwesome5, FontAwesome, Entypo } from '@expo/vector-icons'
 
 const ModalBody = (props) => (
     <View style={styles.container}>
@@ -27,7 +27,6 @@ const ModalBody = (props) => (
             <View style={styles.sortViewersCenter}>
                 <Text style={styles.textFilterMainLabel}>Recommended For You</Text>
                 <Text style={styles.textFilterDescription}>Show the most relevant channels based on your viewing history</Text>
-
             </View>
             <View style={styles.sortViewersRight}>
             </View>
@@ -38,22 +37,17 @@ const ModalBody = (props) => (
         <TouchableOpacity style={styles.searchAllTags}>
             <Text style={styles.titlePurple}>Search all tags</Text>
         </TouchableOpacity>
-        <TouchableOpacity opacity = {0.8}style = {styles.purpleButton}>
-                <Text style = {styles.purpleButtonText}>Apply</Text>
+        <TouchableOpacity opacity={0.8} style={styles.purpleButton}>
+            <Text style={styles.purpleButtonText}>Apply</Text>
         </TouchableOpacity>
-
-
     </View>
 
 
 )
 
-
-export default ModalBody;
-
+export default ModalBody
 
 const styles = StyleSheet.create({
-
     container: {
         padding: 12,
         width: '100%',
@@ -75,7 +69,6 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 50,
         alignItems: 'center'
-
     },
     sortViewers: {
         flexDirection: 'row',
@@ -113,7 +106,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 40,
         borderRadius: 5,
-        backgroundColor:  '#9146ff',
+        backgroundColor: '#9146ff',
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',

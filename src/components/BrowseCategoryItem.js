@@ -1,6 +1,5 @@
-import React from 'react';
-import { StyleSheet, Image, TouchableOpacity, Text, View } from 'react-native';
-import { Entypo } from '@expo/vector-icons';
+import React from 'react'
+import { StyleSheet, Image, TouchableOpacity, Text, View } from 'react-native'
 
 const BrowseCategoryItem = (props) => (
     <TouchableOpacity activeOpacity={0.3}>
@@ -13,12 +12,12 @@ const BrowseCategoryItem = (props) => (
                     <Text style={{ color: 'white', fontSize: 12 }}>{tag}</Text>
                 </View>)}
             </View>
-           
+
         </View>
     </TouchableOpacity>
 )
 
-export default BrowseCategoryItem;
+export default BrowseCategoryItem
 
 
 const styles = StyleSheet.create({
@@ -36,7 +35,6 @@ const styles = StyleSheet.create({
         width: 65,
         height: 90,
         backgroundColor: '#6441a5'
-
     },
     titleCategory: {
         color: 'white',
@@ -56,7 +54,6 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontFamily: 'Roobert',
         fontSize: 12
-
     },
     tag: {
         display: 'flex',
@@ -79,7 +76,6 @@ const styles = StyleSheet.create({
         color: 'grey',
         fontSize: 13,
         lineHeight: 20
-
     },
     category: {
         color: 'grey',
@@ -92,5 +88,4 @@ const styles = StyleSheet.create({
         width: 20,
         borderRadius: 10
     },
-
 });

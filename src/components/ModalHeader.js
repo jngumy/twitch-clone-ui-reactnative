@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TouchableHighlight, TouchableOpacity, Text, View } from 'react-native';
+import { StyleSheet, TouchableHighlight, TouchableOpacity, Text, View } from 'react-native'
 import { Entypo } from '@expo/vector-icons';
 
 const ModalHeader = (props) => (
@@ -19,14 +19,12 @@ const ModalHeader = (props) => (
 export default ModalHeader;
 
 const styles = StyleSheet.create({
-
     modalHeader: {
         flexDirection: 'row',
         width: '100%',
         height: 60,
         justifyContent: 'center',
         alignItems: 'center'
-
     },
     modalHeaderTitle: {
         fontFamily: 'Roobert-bold',
@@ -38,7 +36,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignItems: 'flex-start',
         paddingLeft: 5
-
     },
     modalHeaderCenter: {
         flex: 0.7,
@@ -47,7 +44,6 @@ const styles = StyleSheet.create({
     modalHeaderRight: {
         flex: 0.15,
         alignItems: 'center'
-
     },
     modalHeaderRightText: {
         fontFamily: 'Roobert-bold',

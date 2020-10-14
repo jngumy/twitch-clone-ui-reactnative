@@ -14,7 +14,7 @@ const items_rec = [
     {
         title: 'Valorant',
         views: '50.6K',
-        uri : require('../assets/images/valorant.jpg'),
+        uri: require('../assets/images/valorant.jpg'),
         tags: ['Shooter']
     },
     {
@@ -31,7 +31,7 @@ const items_rec = [
         tags: ['Shooter']
 
     },
-   
+
 ];
 
 export default items_rec;

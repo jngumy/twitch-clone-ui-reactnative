@@ -1,9 +1,9 @@
-import React from 'react';
-import { StyleSheet, Image, TouchableOpacity ,Text, View } from 'react-native';
-import { Entypo } from '@expo/vector-icons'; 
+import React from 'react'
+import { StyleSheet, Image, TouchableOpacity, Text, View } from 'react-native'
+import { Entypo } from '@expo/vector-icons'
 
 const ChannelItem = (props) => (
-    <TouchableOpacity  activeOpacity={0.3}>
+    <TouchableOpacity activeOpacity={0.3}>
         <View style={styles.card}>
             <Image source={props.item.uri} style={styles.categoryImg} />
             <View style={styles.cardDescription}>
@@ -11,7 +11,6 @@ const ChannelItem = (props) => (
                     <Image source={props.item.profileImg} style={styles.profileImg} />
                     <Text style={styles.user}>{props.item.user}</Text>
                 </View>
-
                 <Text numberOfLines={1} style={styles.title}>{props.item.title}</Text>
                 <Text style={styles.category}>{props.item.category}</Text>
                 {props.item.tags.map((tag, index) => <View style={styles.tag} key={index}>
@@ -30,7 +29,7 @@ export default ChannelItem;
 
 
 const styles = StyleSheet.create({
-    card : {
+    card: {
         display: 'flex',
         width: '100%',
         flexDirection: 'row',
@@ -39,31 +38,30 @@ const styles = StyleSheet.create({
     cardDescription: {
         paddingLeft: 15,
     },
-    categoryImg :{
-        height:80,
+    categoryImg: {
+        height: 80,
         width: 140
     },
-    titleCategory : {
+    titleCategory: {
         color: 'white',
         fontWeight: 'bold'
     },
-    viewsWrapper : {
+    viewsWrapper: {
         position: 'absolute',
         bottom: 0,
-        display:'flex',
+        display: 'flex',
         flexDirection: 'row',
         height: '25%',
         justifyContent: 'flex-end',
         alignItems: 'flex-end',
     },
-    views : {
+    views: {
         color: 'white',
         alignSelf: 'center',
         fontFamily: 'Roobert',
         fontSize: 12
-
     },
-    tag :{
+    tag: {
         display: 'flex',
         flexDirection: 'row',
         backgroundColor: 'grey',
@@ -86,23 +84,22 @@ const styles = StyleSheet.create({
         fontSize: 13,
         lineHeight: 20,
         fontFamily: 'Roobert'
-
     },
-    category : {
+    category: {
         color: 'grey',
         fontSize: 13,
         fontFamily: 'Roobert',
         marginTop: 2
     },
-    profileImg : {
+    profileImg: {
         height: 20,
         width: 20,
         borderRadius: 10
     },
-    userWrapper : {
+    userWrapper: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-start',
-        alignItems:'center',
+        alignItems: 'center',
     }
 });

@@ -1,9 +1,8 @@
 import React from 'react';
-import { StyleSheet, Dimensions, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import { StyleSheet, Dimensions, SafeAreaView, ScrollView, Text, View } from 'react-native'
 import Header from '../components/Header'
 
-
-const windowHeight = Dimensions.get('window').height;
+const windowHeight = Dimensions.get('window').height
 
 export default class Esports extends React.Component {
   render() {
@@ -20,8 +19,6 @@ export default class Esports extends React.Component {
   }
 }
 
-
-
 const styles = StyleSheet.create({
   container: {
     paddingLeft: 12,
@@ -29,9 +26,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     flex: 1,
   },
-  scrollView: {
-  },
-
   bigBlue: {
     color: 'white',
     fontSize: 40,
@@ -44,6 +38,5 @@ const styles = StyleSheet.create({
   title: {
     height: windowHeight / 9,
 
-  },
-  
+  }
 });

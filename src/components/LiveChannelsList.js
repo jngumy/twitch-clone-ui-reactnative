@@ -1,24 +1,21 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import ChannelItem from './ChannelItem';
-
-
+import React from 'react'
+import { StyleSheet, View } from 'react-native'
+import ChannelItem from './ChannelItem'
 
 const LiveChannelsList = (props) => {
     const { items } = props
-    return(
-        <View style = {styles.container}>
-                {
-                    items.map(function(item, index){
-                        return(
-                           <ChannelItem key = {index}item={item}/>   
-                        )
-                    })
-                }
+    return (
+        <View style={styles.container}>
+            {
+                items.map(function (item, index) {
+                    return (
+                        <ChannelItem key={index} item={item} />
+                    )
+                })
+            }
         </View>
     )
 }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -28,4 +25,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default LiveChannelsList;
+export default LiveChannelsList

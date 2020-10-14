@@ -1,10 +1,8 @@
 import React from 'react';
-import { StyleSheet, Image, ScrollView, Dimensions ,Text, View } from 'react-native';
+import { StyleSheet, Dimensions ,Text, View } from 'react-native';
 import CategoriesCarrousel from './CategoriesCarrousel'
 
-const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
-
 
 const FollowedCategories = (props) => {
     return(
@@ -27,18 +25,12 @@ const styles = StyleSheet.create({
     },
     titleWrapper : {
       height: 30,
-
     },
     title: {
         color: 'grey',
         fontFamily: 'Roobert-bold',
         fontSize: 13
-
-
-        
     },
-   
   });
   
-
-export default FollowedCategories ;
+export default FollowedCategories 

@@ -1,6 +1,5 @@
-import React from 'react';
-import { StyleSheet, Image, Dimensions, TouchableOpacity, Text, View } from 'react-native';
-import { Entypo } from '@expo/vector-icons';
+import React from 'react'
+import { StyleSheet, Image, Dimensions, TouchableOpacity, Text, View } from 'react-native'
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -17,9 +16,8 @@ const DiscoverItem = (props) => {
                     <Text style={styles.liveText}>LIVE</Text>
                 </View>
             </View>
-
             <View style={styles.description}>
-                <View style = {{flexDirection: 'row'}}>
+                <View style={{ flexDirection: 'row' }}>
                     <Text numberOfLines={1} style={styles.titleCategory}>{props.item.user} </Text>
                     <Text style={{ fontFamily: 'Roobert', color: 'grey', fontSize: 16 }}>streaming</Text>
                     <Text numberOfLines={1} style={styles.titleCategory}> {props.item.category}</Text>
@@ -29,10 +27,6 @@ const DiscoverItem = (props) => {
                     <Text style={styles.tagText} numberOfLines={1}>{props.item.tags[0]} </Text>
                 </View>
             </View>
-
-
-
-
         </TouchableOpacity>
     )
 
@@ -66,7 +60,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontFamily: 'Roobert-bold',
         fontSize: 16,
-
     },
     viewsWrapper: {
         flexDirection: 'row',
@@ -85,7 +78,6 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontFamily: 'Roobert',
         fontSize: 13
-
     },
     tag: {
         display: 'flex',
@@ -114,7 +106,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontFamily: 'Roobert',
         fontSize: 13
-
     },
     tagText: {
         color: 'white'

@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Image, TouchableOpacity ,Text, View } from 'react-native';
-import { Entypo } from '@expo/vector-icons'; 
+import React from 'react'
+import { StyleSheet, Image, TouchableOpacity ,Text, View } from 'react-native'
+import { Entypo } from '@expo/vector-icons'
 
 
 const CategoryItem = (props) => {
@@ -14,11 +14,8 @@ const CategoryItem = (props) => {
            </View>               
        </TouchableOpacity>
     )
-    
 }
-
 export default CategoryItem;
-
 
 const styles = StyleSheet.create({
   
