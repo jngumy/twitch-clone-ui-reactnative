@@ -1,48 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableHighlight, TouchableOpacity, ScrollView, Text, View } from 'react-native';
+import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableOpacity, ScrollView, Text, View } from 'react-native';
 import { Octicons } from '@expo/vector-icons';
-import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
-import { createAppContainer } from 'react-navigation';
-import Categories from '../tabNavigation/Categories'
-import LiveChannels from '../tabNavigation/LiveChannels'
+import RootTabs from '../tabNavigation/RootTabs'
 
 import Header from '../components/Header'
 import ModalHeader from '../components/ModalHeader'
 import ModalBody from '../components/ModalBody'
 
 const windowHeight = Dimensions.get('window').height;
-const RouteConfigs = {
-  Categories: Categories,
-  Channels: LiveChannels
-}
-
-
-
-const RootTabs = createAppContainer(createMaterialTopTabNavigator(RouteConfigs, {
-  tabBarOptions: {
-    upperCaseLabel: false,
-    activeTintColor: '#6441a5',
-    inactiveTintColor: 'white',
-    activeBackgroundColor: 'black',
-    inactiveBackgroundColor: 'black',
-    style: {
-      borderTopColor: 'black',
-      backgroundColor: 'black',
-    },
-    indicatorStyle: {
-      backgroundColor: '#6441a5'
-    },
-    labelStyle: {
-      fontFamily: 'Roobert-bold',
-      fontSize: 14,
-      alignItems: 'flex-start'
-    },
-    tabStyle: {
-      width: 120,
-    },
-  },
-}));
-
 
 const Browse = (props) => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -90,9 +55,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     flex: 1,
   },
-  scrollView: {
-  },
-
   bigBlue: {
     color: 'white',
     fontSize: 40,
