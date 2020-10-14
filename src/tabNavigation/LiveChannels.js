@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Dimensions, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import { View } from 'react-native'
 
 const LiveChannels = (props) => (
     <View>
@@ -7,4 +7,4 @@ const LiveChannels = (props) => (
     </View>
 )
 
-export default LiveChannels;
+export default LiveChannels
