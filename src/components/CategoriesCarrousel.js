@@ -13,7 +13,6 @@ const CategoriesCarrousel = (props) => {
                 contentContainerStyle={{ width: `${100 * props.itemsPerInterval}%` }}
                 showsHorizontalScrollIndicator={false}
                 scrollEventThrottle={200}
-                pagingEnabled
                 decelerationRate='normal'>
                 {
                     items.map(function(item, index){

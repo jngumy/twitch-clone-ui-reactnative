@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, Dimensions, Modal, SafeAreaView, TouchableHighlight, TouchableOpacity, ScrollView, Text, View } from 'react-native';
-import { Octicons, Entypo } from '@expo/vector-icons';
+import { Octicons } from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 import Categories from '../tabNavigation/Categories'
 import LiveChannels from '../tabNavigation/LiveChannels'
 
 import Header from '../components/Header'
-
+import ModalHeader from '../components/ModalHeader'
+import ModalBody from '../components/ModalBody'
 
 const windowHeight = Dimensions.get('window').height;
 const RouteConfigs = {
@@ -63,35 +64,14 @@ const Browse = (props) => {
       </TouchableOpacity>
 
       <Modal
+        statusBarTranslucent
         animationType="slide"
-        transparent={true}
         visible={modalVisible}
-        onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
-        }}
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <View style={styles.modalHeader}>
-              <View style= {styles.modalHeaderLeft}>
-                <Entypo name="cross" size={32} color= 'white' />
-              </View>
-              <View style= {styles.modalHeaderCenter}>
-                <Text style={styles.modalHeaderTitle}>Sort and Filter</Text>
-              </View>
-              <View style= {styles.modalHeaderRight}>
-                <Text style={styles.modalHeaderRightText}>Reset</Text>
-              </View>
-            </View>
-
-            <TouchableHighlight
-              style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
-              onPress={() => {
-                setModalVisible(!modalVisible);
-              }}
-            >
-              <Text style={styles.textStyle}>Hide Modal</Text>
-            </TouchableHighlight>
+            <ModalHeader onPress={() => { setModalVisible(!modalVisible); }} />
+            <ModalBody />
           </View>
         </View>
       </Modal>
@@ -141,7 +121,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     fontFamily: 'Roobert',
     color: 'white',
-    fontSize: 16
+    fontSize: 15
   },
   modalView: {
     backgroundColor: "black",
@@ -153,12 +133,6 @@ const styles = StyleSheet.create({
       height: 2
     },
   },
-  openButton: {
-    backgroundColor: "#F194FF",
-    borderRadius: 20,
-    padding: 10,
-    elevation: 2
-  },
   textStyle: {
     color: "white",
     fontWeight: "bold",
@@ -168,37 +142,5 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     textAlign: "center",
     backgroundColor: 'green'
-  },
-  modalHeader: {
-    flexDirection: 'row',
-    width: '100%',
-    height: 60,
-    justifyContent: 'center',
-    alignItems: 'center'
-
-  },
-  modalHeaderTitle: {
-    fontFamily: 'Roobert-bold',
-    color: 'white',
-    fontSize: 16
-  },
-  modalHeaderLeft : {
-    flex: 0.15,
-    alignItems: 'center'
-
-  },
-  modalHeaderCenter :{
-    flex: 0.7,
-    alignItems: 'center'
-  },
-  modalHeaderRight : {
-    flex: 0.15,
-    alignItems: 'center'
-
-  }, 
-  modalHeaderRightText : {
-    fontFamily : 'Roobert-bold',
-    fontSize: 16,
-    color: '#6441a5',
   }
 });

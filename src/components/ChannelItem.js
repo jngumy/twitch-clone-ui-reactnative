@@ -84,7 +84,8 @@ const styles = StyleSheet.create({
     title: {
         color: 'white',
         fontSize: 13,
-        lineHeight: 20
+        lineHeight: 20,
+        fontFamily: 'Roobert'
 
     },
     category : {

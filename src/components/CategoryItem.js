@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
     titleCategory : {
         color: 'white',
         fontFamily: 'Roobert-bold',
-        lineHeight: 20
+        lineHeight: 20,
+        paddingTop: 4
         
     },
     viewsWrapper : {
